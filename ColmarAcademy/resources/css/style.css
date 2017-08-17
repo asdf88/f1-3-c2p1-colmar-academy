@@ -1,0 +1,1219 @@
+/* Introducing all fonts */
+
+@font-face {
+  font-family: "AlegreyaSansLight";
+  src: url(../fonts/AlegreyaSans-Light.ttf) format('truetype'),
+       url(../fonts/AlegreyaSans-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "AlegreyaSansRegular";
+  src: url(../fonts/AlegreyaSans-Regular.ttf) format('truetype'),
+       url(../fonts/AlegreyaSans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url(../fonts/Raleway-Regular.ttf) format('truetype'),
+       url(../fonts/Raleway-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "RalewayMedium";
+  src: url(../fonts/Raleway-Medium.ttf) format('truetype'),
+       url(../fonts/Raleway-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url(../fonts/Raleway-Bold.ttf) format('truetype'),
+       url(../fonts/Raleway-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "RalewayExtraBold";
+  src: url(../fonts/Raleway-ExtraBold.ttf) format('truetype'),
+       url(../fonts/Raleway-ExtraBold.woff2) format('woff2');
+}
+
+/* Basic styling of elements */
+
+html,
+body {
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+  width: 100%;
+}
+
+h1 {
+  font-family: RalewayExtraBold;
+  font-size: 64px;
+  font-size: 4rem;
+  color: #4c4c4c;
+}
+
+h2 {
+  font-family: RalewayBold;
+  font-size: 32px;
+  font-size: 2rem;
+  color: #4c4c4c;
+}
+
+h3 {
+  font-family: RalewayBold;
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #4c4c4c;
+}
+
+h4 {
+  font-family: RalewayBold;
+  font-size: 28px;
+  font-size: 1.75rem;
+  color: black;
+}
+
+p,
+a {
+  font-family: RalewayRegular;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: black;
+}
+
+/* Header Section */
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 64px;
+  height: 4rem;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid lightgrey;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin: 0 0 0 24px;
+  margin: 0 0 0 1.5rem;
+  vertical-align: center;
+}
+
+.logo {
+  display: inline;
+  height: 40px;
+  height: 2.5rem;
+  width: auto;
+  margin: 0;
+  padding: 0 4px 0 0;
+  padding: 0 0.25rem 0 0;
+}
+
+.brandName {
+  display: inline;
+  padding: 0;
+}
+
+.colmar {
+  font-family: AlegreyaSansRegular;
+  font-size: 32px;
+  font-size: 2rem;
+  color: black;
+}
+
+.academy {
+  font-family: AlegreyaSansLight;
+  font-size: 32px;
+  font-size: 2rem;
+  color: darkgrey;
+}
+
+nav {
+  text-align: right;
+  margin: 0 24px 0 0;
+  margin: 0 1.5rem 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: RalewayMedium;
+  margin: 0 0 0 16px;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  color: black;
+}
+
+nav a:hover {
+  border-bottom: 0.5px solid black;
+}
+
+nav img {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  nav a {
+    display: none;
+  }
+
+  nav img {
+    display: inline;
+    margin: 0 2rem 0 1rem;
+    padding: 0;
+  }
+
+  .academyLogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .brand {
+    display: none;
+  }
+
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+
+  nav img,
+  .academyLogo {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Banner */
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.phoneBanner {
+  display: none;
+}
+
+.phoneSloganBox {
+  display: none;
+}
+
+.desktopSloganBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0;
+  width: 33%;
+  background-color: grey;
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+
+.slogan,
+.latinSlogan {
+  width: 80%;
+  text-align: right;
+}
+
+.slogan {
+  margin: 64px 48px 32px 0;
+  margin: 4rem 3rem 2rem 0;
+}
+
+.latinSlogan,
+.button {
+  margin: 0 48px 64px 0;
+  margin: 0 3rem 4rem 0;
+}
+
+.learn {
+  color: #fcb514;
+  font-size: 96px;
+  font-size: 6rem;
+}
+
+.slogan h1,
+.latinSlogan h2 {
+  line-height: 1.2;
+  color: white;
+}
+.slogan h1 {
+  font-size: 56px;
+  font-size: 3.5rem;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 240px;
+  width: 15rem;
+  height: 56px;
+  height: 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fcb514;
+}
+
+.button a {
+  font-family: RalewayMedium;
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.button:hover {
+  background-color: hsl(52, 100%, 85%);
+}
+
+.button:active {
+  background-color: #ECD000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+                -ms-grid-row-align: flex-end;
+            align-items: flex-end;
+    height: 50rem;
+  }
+
+  .desktopSloganBox {
+    width: 100%;
+    min-height: 45%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+
+  .slogan,
+  .latinSlogan {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .button {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+  }
+
+  .slogan h1 {
+    font-size: 4rem;
+  }
+
+  .latinSlogan h2 {
+    font-size: 2.5rem;
+  }
+
+  .learn {
+    font-size: 5rem;
+  }
+
+  .slogan h1,
+  .latinSlogan h2 {
+    padding: 1rem 0;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    display: none;
+  }
+
+  .phoneBanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .phoneBannerImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .desktopSloganBox {
+    display: none;
+  }
+
+  .phoneSloganBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fcb514;
+    opacity: 0.75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  }
+
+  .phoneSloganBox .slogan,
+  .phoneSloganBox .latinSlogan,
+  .phoneSloganBox .button {
+    width: 90%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .phoneSloganBox .slogan,
+  .phoneSloganBox .latinSlogan {
+    margin: 0 auto;
+  }
+
+  .phoneSloganBox .slogan h1,
+  .phoneSloganBox .slogan .learn {
+    font-size: 2rem;
+    color: #4c4c4c;
+    line-height: 1.1;
+  }
+
+  .phoneSloganBox .latinSlogan h2 {
+    font-size: 1.5rem;
+    color: #4c4c4c;
+    line-height: 1.1;
+  }
+
+  .phoneSloganBox .button {
+    height: 2.5rem;
+    background-color: white;
+    margin: 1rem auto;
+  }
+
+  .phoneSloganBox .button:hover {
+    background-color: lightgrey;
+  }
+
+  .phoneSloganBox .button a {
+    font-size: 1rem;
+    color: #4c4c4c;
+  }
+
+  .phoneSloganBox .button a:hover {
+    font-family: RalewayBold;
+  }
+}
+
+/* Main Information */
+
+/* Due to the very similar layout structure of the main section
+and the thesis section, I decided to name and style their elements
+in as few groups as possible. Therefore, both sections are basically split
+into two parts, one 60% wide the other 40%, hence the name pageSplitterSixtyForty.
+I also tried to group as many of their media queries as possible. */
+
+.pageSplitterSixtyForty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 32px 0;
+  padding: 2rem 0;
+}
+
+.sixtyPercent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+}
+
+.mediaMain {
+  width: 95%;
+  height: auto;
+  margin: 24px auto;
+  margin: 1.5rem auto;
+}
+
+.text {
+  width: 95%;
+  text-align: left;
+  padding: 0;
+  margin: 1.5 auto;
+}
+
+.text h2 {
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+.text .quote {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 0;
+}
+
+.source {
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 32px 0;
+  padding: 2rem 0;
+}
+
+.fortyPercent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin: 0;
+  padding: 24px 8px 0 8px;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+}
+
+.featureBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+  border-left: 0.5px solid grey;
+  margin: 0 0 8px 0;
+  margin: 0 0 0.5rem 0;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+
+.featureBox:hover {
+  background-color: #fcb514;
+  border-top: 0.5px solid #fcb514;
+  border-bottom: 0.5px solid #fcb514;
+  border-left: 0.5px solid #fcb514;
+}
+
+.featureBox img {
+  width: 35%;
+  height: auto;
+  padding: 16px 24px;
+  padding: 1rem 1.5rem;
+}
+
+.what {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55%;
+}
+
+.what h4 {
+  color: #4c4c4c;
+}
+
+.what p {
+  font-family: RalewayRegular;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  display: block;
+  line-height: 1.2;
+}
+
+.what a {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  text-decoration: none;
+  color: #627aac;
+  display: block;
+}
+
+.what a:hover {
+  font-family: RalewayMedium;
+  color: #3B5998;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pageSplitterSixtyForty {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #e4e4e4;
+    padding: 1rem 0;
+    border-bottom: 0.5px solid darkgrey;
+  }
+
+  .sixtyPercent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    background-color: white;
+  }
+
+  .fortyPercent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    background-color: #e4e4e4;
+    padding: 1rem 0;
+    border: none;
+  }
+
+  .featureBox {
+    background-color: white;
+    border-left: none;
+  }
+
+  .featureBox:hover {
+    border-left: none;
+  }
+
+  .what h4 {
+    font-size: 2rem;
+    color: #4c4c4c;
+  }
+
+  .what p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .fortyPercent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+
+  .featureBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    border: none;
+  }
+
+  .featureBox:hover {
+    border: none;
+  }
+
+  .featureBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 12rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .what {
+    width: 100%;
+  }
+
+  .what h4 {
+    font-family: RalewayBold;
+    font-size: 1.5rem;
+    color: #4c4c4c;
+    padding: 1rem 0 0 1rem;
+  }
+
+  .what p {
+    font-size: 1.25rem;
+    padding: 1rem 1rem;
+  }
+
+  .what a {
+    font-size: 1rem;
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .motivate,
+  .exhibitExamples {
+    display: none;
+  }
+
+  .fortyPercent,
+  .sixtyPercent {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    padding: 1rem 0;
+    background-color: #e4e4e4;
+  }
+
+  .featureBox {
+    width: 90%;
+  }
+
+  .featureBox {
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+
+  .featureBox:hover {
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025);
+    box-shadow: 5px 5px 5px darkgrey;
+    background-color: white;
+  }
+}
+
+/* Courses */
+
+.phoneCourseContainerBox {
+  display: none;
+}
+
+.coursesSection {
+  width: 100%;
+  padding: 32px 0;
+  padding: 2rem 0;
+  background-color: #e4e4e4;
+}
+
+.coursesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.coursesContainer h1 {
+  margin: 40px 0 32px 0;
+  margin: 2.5rem 0 2rem 0;
+}
+
+.courseBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.courseBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  margin: 8px;
+  margin: 0.5rem;
+  background-color: white;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  max-width: 28%;
+  min-width: 256px;
+  min-width: 16rem;
+}
+
+.courseBox:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 8px 8px 8px darkgrey;
+}
+
+.courseBox img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.courseDescription {
+  padding: 0;
+  margin: 16px 16px 16px;
+  margin: 1rem 1rem 1rem;
+}
+
+.courseDescription h3 {
+  font-family: RalewayBold;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+}
+
+.courseDescription p {
+  padding-top: 16px;
+  padding-top: 1rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1050px) {
+  .courseBox {
+    max-width: 47.5%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .courseBox {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .coursesContainer h1,
+  .thesisExhibit h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .coursesSection {
+    background-color: white;
+    padding: 0;
+  }
+
+  .coursesContainer {
+    width: 100%;
+  }
+
+  .courseBoxContainer {
+    display: none;
+  }
+
+  .phoneCourseContainerBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .courseDropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+    background-color: #e4e4e4;
+  }
+
+  .courseDropdown span {
+    font-family: RalewayBold;
+    color: #4c4c4c;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .softwareEngineering {
+    background-image: url(../images/course-software.jpg);
+  }
+
+  .computerArt {
+    background-image: url(../images/course-computer-art.jpg);
+  }
+
+  .design {
+    background-image: url(../images/course-design.jpg);
+  }
+
+  .data {
+    background-image: url(../images/course-data.jpg);
+  }
+
+  .business {
+    background-image: url(../images/course-business.jpg);
+  }
+
+  .marketing {
+    background-image: url(../images/course-marketing.jpg);
+  }
+
+  .courseContent {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .colorSheet {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #e4e4e4;
+    opacity: 0.75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  }
+
+  .courseContent p {
+    margin: 0;
+    padding: 1rem 1rem;
+    font-family: RalewayBold;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .courseDropdown:hover .courseContent {
+    display: block;
+  }
+
+  .courseDropdown:hover {
+    background-color: #fcb514;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  .coursesContainer h1,
+  .thesisExhibit h1 {
+    font-size: 2.25rem;
+    margin: 1.5rem 0;
+  }
+}
+
+/* Thesis exhibit */
+
+.thesisExhibit {
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thesisExhibit h1 {
+  margin: 40px 0 16px 0;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.sixtyPercent .text p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding: 12px 0 32px 0;
+  padding: 0.75rem 0 2rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesisExhibit .pageSplitterSixtyForty {
+    background-color: white;
+  }
+
+  .thesisVideoContainer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .thesisVideo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .thesisText {
+    display: none;
+  }
+}
+
+/* Footer section */
+
+footer {
+  width: 100%;
+  height: 320px;
+  height: 20rem;
+  background-image: url(../images/books.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0039AF;
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  margin: 0;
+  padding: 0;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  padding: 0;
+}
+
+.socialMedia .fa-facebook,
+.socialMedia .fa-twitter,
+.socialMedia .fa-instagram,
+.socialMedia .fa-youtube {
+  color: white;
+  padding: 0 32px;
+  padding: 0 2rem;
+}
+
+.socialMedia .phone {
+  display: none;
+}
+
+.terms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.terms p,
+.terms div {
+  padding: 16px 24px;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+  color: white;
+}
+
+.terms a {
+  text-decoration: none;
+  padding-left: 16px;
+  padding-left: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
+  color: white;
+}
+
+.terms a:hover {
+  font-family: RalewayMedium;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 12rem;
+  }
+
+  .socialMedia .desktop {
+    display: none;
+  }
+
+  .socialMedia .phone {
+    display: inline;
+  }
+
+  .socialMedia .fa-facebook,
+  .socialMedia .fa-twitter,
+  .socialMedia .fa-instagram,
+  .socialMedia .fa-youtube {
+    padding: 0 1rem;
+  }
+
+  .terms p,
+  .terms a {
+    font-size: 0.75rem;
+  }
+}
+
+/* I have two question, I hope you see them.
+The first one is about the course section of the website that is shown
+when the max-width is 480px. As you may have noticed, when one
+hovers over the course name, the course's content switches from display: none
+to display: block. This creates a very choppy and sudden effect. I tried to make the
+course content slide nicely into view by using various transition properties but
+none of them worked. Do you have any idea how one could achieve this using CSS?
+
+My second question is about media queries. For some reason my mobile (LG Nexus 5) displays
+the site intended for devices with a max-width of 1200px rather than 480px regardless whether it's held
+in portrait or landscape orientation. Is there something I have to change on my media query to get my
+mobile to react to it? On my computer all the media queries worked correctly as I minimized the browser. 
+I don't know if it's worth anything, but fyi I tested this website on a 15.6" screen with a screen resolution of
+2880x1620 as well as on a 23" screen with a screen resolution of 1920x1080. */
